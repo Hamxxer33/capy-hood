@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { HOOD } from "@/data/hood";
 import { cn } from "@/lib/utils";
 
 const LINKS = [
@@ -18,7 +19,7 @@ export function SiteHeader({ hasPass }: { hasPass: boolean }) {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
         <a href="#top" className="flex items-center gap-2.5">
           <img
-            src="/hood/don.jpg"
+            src={HOOD[0].src}
             alt=""
             className="hood-pfp size-8 rounded-sm object-cover"
           />

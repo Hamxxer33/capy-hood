@@ -7,12 +7,17 @@ export type Member = {
   traits: { label: string; value: string }[];
 };
 
+const hoodImg = (file: string) =>
+  import.meta.env.DEV
+    ? `/hood/${file}`
+    : `https://cdn.jsdelivr.net/gh/Hamxxer33/capy-hood@main/public/hood/${file}`;
+
 export const HOOD: Member[] = [
   {
     id: "don",
     name: "The Don",
     role: "Founding vibe",
-    src: "/hood/don.jpg",
+    src: hoodImg("don.jpg"),
     quote: "I don't chase. I sit.",
     traits: [
       { label: "Head", value: "Top hat" },
@@ -25,7 +30,7 @@ export const HOOD: Member[] = [
     id: "professor",
     name: "The Professor",
     role: "Quiet brains",
-    src: "/hood/professor.jpg",
+    src: hoodImg("professor.jpg"),
     quote: "Read the room. Then leave it.",
     traits: [
       { label: "Head", value: "Orange visor" },
@@ -38,7 +43,7 @@ export const HOOD: Member[] = [
     id: "storm",
     name: "Storm",
     role: "Weather report",
-    src: "/hood/storm.jpg",
+    src: hoodImg("storm.jpg"),
     quote: "Let it pour. I'm already wet.",
     traits: [
       { label: "Head", value: "Straw visor" },
@@ -51,7 +56,7 @@ export const HOOD: Member[] = [
     id: "projection",
     name: "Projection",
     role: "Double vision",
-    src: "/hood/projection.jpg",
+    src: hoodImg("projection.jpg"),
     quote: "Two colors. One mood.",
     traits: [
       { label: "Head", value: "Green visor" },
@@ -64,7 +69,7 @@ export const HOOD: Member[] = [
     id: "captain",
     name: "Captain",
     role: "One good eye",
-    src: "/hood/captain.jpg",
+    src: hoodImg("captain.jpg"),
     quote: "Lost the eye. Kept the vibe.",
     traits: [
       { label: "Head", value: "Lime visor" },
@@ -77,7 +82,7 @@ export const HOOD: Member[] = [
     id: "bloom",
     name: "Bloom",
     role: "Pretty, still mean",
-    src: "/hood/bloom.jpg",
+    src: hoodImg("bloom.jpg"),
     quote: "Pretty and mean is still pretty.",
     traits: [
       { label: "Head", value: "Knit beanie" },
@@ -90,7 +95,7 @@ export const HOOD: Member[] = [
     id: "exhale",
     name: "Exhale",
     role: "Do not reply",
-    src: "/hood/exhale.jpg",
+    src: hoodImg("exhale.jpg"),
     quote: "In. Out. Don't reply.",
     traits: [
       { label: "Head", value: "Maroon wrap" },
@@ -103,7 +108,7 @@ export const HOOD: Member[] = [
     id: "sensei",
     name: "Sensei",
     role: "The practice",
-    src: "/hood/sensei.jpg",
+    src: hoodImg("sensei.jpg"),
     quote: "The hood is a practice.",
     traits: [
       { label: "Head", value: "Knotted cap" },
@@ -116,7 +121,7 @@ export const HOOD: Member[] = [
     id: "quiet",
     name: "Quiet",
     role: "Masked royalty",
-    src: "/hood/quiet.jpg",
+    src: hoodImg("quiet.jpg"),
     quote: "You don't need to see it to know.",
     traits: [
       { label: "Head", value: "Spiked crown" },
@@ -129,7 +134,7 @@ export const HOOD: Member[] = [
     id: "afterhours",
     name: "After Hours",
     role: "The meadow never closed",
-    src: "/hood/afterhours.jpg",
+    src: hoodImg("afterhours.jpg"),
     quote: "The meadow never closed.",
     traits: [
       { label: "Head", value: "Green beanie" },
@@ -142,7 +147,7 @@ export const HOOD: Member[] = [
     id: "monday",
     name: "Monday",
     role: "Even capys have one",
-    src: "/hood/monday.jpg",
+    src: hoodImg("monday.jpg"),
     quote: "Even capys have a Monday.",
     traits: [
       { label: "Head", value: "Knit brim" },
