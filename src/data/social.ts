@@ -1,8 +1,8 @@
-export const X_HANDLE = "CapyonHood";
-export const X_PROFILE_URL = "https://x.com/CapyonHood";
+export const X_HANDLE = "capyrhood";
+export const X_PROFILE_URL = "https://x.com/capyrhood";
 
-/** Swap this to the raid post when you have it, e.g. https://x.com/CapyonHood/status/123 */
-export const X_POST_URL = "https://x.com/CapyonHood";
+/** Swap this to the raid post when you have it, e.g. https://x.com/capyrhood/status/123 */
+export const X_POST_URL = "https://x.com/capyrhood";
 
 export const FORM_ID =
   "1FAIpQLSflPZYnkgmp9a5gi9gFEQ5iyAwhv-9fUQ98M9jqGFRJMZPZOQ";

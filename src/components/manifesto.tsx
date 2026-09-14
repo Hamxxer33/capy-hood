@@ -46,7 +46,7 @@ const FAQS = [
   },
   {
     q: "When is mint?",
-    a: "When the water is warm. Follow @CapyonHood or join t.me/capyhoodnft. We will not fake a countdown.",
+    a: "When the water is warm. Follow @capyrhood or join t.me/capyhoodnft. We will not fake a countdown.",
   },
 ];
 

@@ -2,6 +2,7 @@ import { ArrowDown, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { HOOD, STATS } from "@/data/hood";
+import { X_PROFILE_URL } from "@/data/social";
 import { cn } from "@/lib/utils";
 
 const FEATURED = [
@@ -68,7 +69,7 @@ export function Hero() {
             </Button>
             <Button asChild size="lg" variant="outline">
               <a
-                href="https://x.com/CapyonHood"
+                href={X_PROFILE_URL}
                 target="_blank"
                 rel="noreferrer"
               >

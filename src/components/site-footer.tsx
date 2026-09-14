@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import { X_HANDLE, X_PROFILE_URL } from "@/data/social";
 
 export function SiteFooter() {
   return (
@@ -23,12 +24,12 @@ export function SiteFooter() {
             <ArrowUpRight className="size-4" />
           </a>
           <a
-            href="https://x.com/CapyonHood"
+            href={X_PROFILE_URL}
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-1 text-fg transition-opacity duration-150 hover:opacity-70"
           >
-            @CapyonHood
+            @{X_HANDLE}
             <ArrowUpRight className="size-4" />
           </a>
           <p className="text-subtle">Robinhood Chain · OpenSea soon</p>
