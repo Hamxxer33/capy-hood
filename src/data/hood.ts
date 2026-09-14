@@ -7,10 +7,7 @@ export type Member = {
   traits: { label: string; value: string }[];
 };
 
-const hoodImg = (file: string) =>
-  import.meta.env.DEV
-    ? `/hood/${file}`
-    : `https://cdn.jsdelivr.net/gh/Hamxxer33/capy-hood@main/public/hood/${file}`;
+const hoodImg = (file: string) => `/hood/${file}`;
 
 export const HOOD: Member[] = [
   {
